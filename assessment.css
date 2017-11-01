@@ -11,14 +11,31 @@ h2{
     color:white; 
 }
 p{
+    margin:auto;
+    width:400px;
+    height:auto;
     text-align: center; 
+}
+caption{
+    font-size: 14pt;
+    background-color:#cbcbcb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
 }
 blockquote{
     font-size:16pt; 
     text-align: center; 
+    height:auto; 
+    width:400px;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 table{
     width:400px;
+    border-radius: 5px;
+    background-color: rgb(237, 240, 244);
     height: auto;
     text-align: center; 
     padding:10px;
@@ -34,21 +51,36 @@ table{
      color: rgb(242, 242, 242); 
 }
 #teamRoster{
-    width:400px;
+    box-shadow: 5px 5px 5px rgb(218, 216, 216);
+    width:380px;
     height:auto; 
     margin: auto;
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:10px;
+    margin-bottom:10px;
     padding:10px; 
     border-radius: 5px; 
     background: linear-gradient(to right, rgb(27, 27, 70), rgb(255, 77, 0)); 
     color:white; 
 }
-#teamRoster li{
-    border-bottom: white solid 1px;
-    
-    list-style: none; 
+#teamRoster > :first-child{
+    background-image: url("dblogo.png");
+    background-position-x: right;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    color:white; 
+    text-decoration: none;
+    list-style: none;
 }
+#teamRoster > :last-child{
+    border-top: solid white 1px;
+    list-style: none;
+    background-position-x: right;
+    background-image: url("bears.png");
+    background-size:200px;
+    background-repeat: no-repeat;
+    color:white; 
+}
+
 #teamRoster a{
     color:white; 
     text-decoration: none; 
@@ -71,8 +103,9 @@ h5{
     bottom: 0px; 
 }
 form{
-    background-color: rgb(202, 202, 202);
-    width:400px;
+    box-shadow: 5px 5px 5px rgb(240, 234, 234);
+    background-color: rgb(235, 235, 235);
+    width:380px;
     padding:10px;
     border-radius: 5px;
     height:auto; 
